@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreCollectionViewCell" id="gTV-IL-0wX" customClass="StoreCollectionViewCell" customModule="__7_HomeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-Eu-PHn">
+                        <rect key="frame" x="5" y="5" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="5Ng-3h-jvw"/>
+                            <constraint firstAttribute="width" constant="80" id="72J-py-okw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-tY-A8f">
+                        <rect key="frame" x="10" y="89" width="70" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="GdX-tY-A8f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Q5v-YN-1tp"/>
+                <constraint firstItem="GdX-tY-A8f" firstAttribute="top" secondItem="uAY-Eu-PHn" secondAttribute="bottom" constant="4" id="S5G-Fp-XYl"/>
+                <constraint firstAttribute="trailing" secondItem="GdX-tY-A8f" secondAttribute="trailing" constant="10" id="UBk-FC-mrY"/>
+                <constraint firstItem="uAY-Eu-PHn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="VPv-5E-oGe"/>
+                <constraint firstItem="uAY-Eu-PHn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hau-kk-YeD"/>
+                <constraint firstAttribute="trailing" secondItem="uAY-Eu-PHn" secondAttribute="trailing" constant="5" id="yWy-D0-Sv0"/>
+            </constraints>
+            <connections>
+                <outlet property="storesImage" destination="uAY-Eu-PHn" id="j9A-Z0-GIn"/>
+                <outlet property="storesNameLabel" destination="GdX-tY-A8f" id="C9T-ke-lRM"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+</document>
